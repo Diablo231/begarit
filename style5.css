@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'ProstoOne-Regular';
+    src: url('ttf/ProstoOne-Regular.ttf') format('truetype'); /* формат TTF */
+}
+
+@font-face {
+    font-family: 'Play-Regular';
+    src: url('ttf/Play-Regular.ttf') format('truetype'); /* формат TTF */
+}
+
+@font-face {
+    font-family: 'NunitoSans-Regular';
+    src: url('ttf/NunitoSans-Regular.ttf') format('truetype'); /* формат TTF */
+}
+
+/* Основные стили */
+
+body {
+    margin: 0;
+    background-color: #151720; /* Устанавливаем основной цвет фона */
+    font-family: 'ProstoOne-Regular', sans-serif; /* Устанавливаем шрифт для всего тела страницы */
+}
+
+nav {
+    background: transparent; /* Прозрачный фон для меню навигации */
+    position: fixed;
+    width: 90%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between; /* Раздвигаем элементы по краям */
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 26px;
+    font-family: 'ProstoOne-Regular', sans-serif; /* Используем ваш шрифт */
+    margin-top: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.logo img {
+    height: 45px; /* adjust as needed */
+    margin-left: 120px;
+}
+
+.logo span {
+    color: white; /* цвет текста */
+    font-size: 26px; /* размер шрифта */
+    font-weight: bold; /* жирный шрифт */
+    margin-left: 10px;
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Расстояние между пунктами меню */
+}
+
+.nav-menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu a {
+    display: block;
+    color: white;
+    text-decoration: none; /* Убираем подчеркивание для ссылок */
+    transition: transform 0.2s ease; /* Добавляем плавное переходное состояние */
+}
+
+.nav-menu a:hover {
+    transform: scale(1.1); /* Увеличиваем масштаб при наведении */
+}
+
+/* Заголовок */
+
+header {
+    text-align: center;
+    padding: 199px; /* Отступы сверху и по бокам */
+    max-width: 1200px;
+    margin-left: -100px; /* Центрируем содержимое */
+    box-sizing: border-box; /* Учитываем паддинги в ширине элемента */
+    margin-left: 282px; /* Перемещаем заголовок вправо на 50px */
+}
+
+header h1 {
+    font-size: 49px; /* Размер шрифта для заголовка */
+    color: white; /* Цвет текста заголовка */
+    margin-bottom: 20px; /* Отступ снизу */
+    margin-left: 0px; 
+}
+
+.container2 {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0px; /* Отступ от края окна браузера */
+}
