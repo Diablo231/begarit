@@ -77,6 +77,7 @@ nav {
 .nav-menu a:hover {
     transform: scale(1.1); /* Увеличиваем масштаб при наведении */
 }
+/* Стили для контейнера */
 
 /* Заголовок */
 
@@ -86,19 +87,52 @@ header {
     max-width: 1200px;
     margin-left: -100px; /* Центрируем содержимое */
     box-sizing: border-box; /* Учитываем паддинги в ширине элемента */
-    margin-left: 282px; /* Перемещаем заголовок вправо на 50px */
+    margin-left: -3px; /* Перемещаем заголовок вправо на 50px */
 }
 
 header h1 {
     font-size: 49px; /* Размер шрифта для заголовка */
     color: white; /* Цвет текста заголовка */
     margin-bottom: 20px; /* Отступ снизу */
-    margin-left: 0px; 
+    margin-left: -60px; 
 }
+
 
 .container2 {
     position: fixed;
     bottom: 0;
     right: 0;
     margin: 0px; /* Отступ от края окна браузера */
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 126px; /* Устанавливаем отступы от краев экрана */
+    padding: 20px;
+    margin-top: -200px;
+}
+
+/* Стили для заголовков, текста и ссылок */
+
+h1, h2 {
+    font-family: 'ProstoOne-Regular', sans-serif;
+    color: white;
+    margin-top: 0; /* Убираем верхний отступ у заголовков */
+}
+
+p {
+    color: white;
+    margin-top: 0; /* Убираем верхний отступ у параграфов */
+    text-align: left; /* Выравниваем текст по левому краю */
+}
+
+ul {
+    color: white;
+    margin-top: 0; /* Убираем верхний отступ у списка */
+}
+
+a {
+    color: #ffffff; /* цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание для ссылок */
 }
