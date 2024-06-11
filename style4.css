@@ -86,19 +86,128 @@ header {
     max-width: 1200px;
     margin-left: -100px; /* Центрируем содержимое */
     box-sizing: border-box; /* Учитываем паддинги в ширине элемента */
-    margin-left: 282px; /* Перемещаем заголовок вправо на 50px */
 }
 
 header h1 {
     font-size: 49px; /* Размер шрифта для заголовка */
     color: white; /* Цвет текста заголовка */
     margin-bottom: 20px; /* Отступ снизу */
-    margin-left: 0px; 
+    margin-left: -56px; 
+    margin-left: -182px;
 }
 
-.container2 {
+header p {
+    font-size: 18px;
+    color: #ffffff; /* Цвет текста */
+    margin-top: 10px; /* Отступ сверху */
+    line-height: 1.5; /* Увеличиваем высоту строки */
+    max-width: 700px; /* Максимальная ширина текста */
+    margin: 0 auto 40px; /* Центрируем текст и отступ снизу */
+    text-align: left;
+}
+
+/* Кнопка */
+
+.custom-button {
+    left: -186px;
+    display: inline-block;
+    background-color: #5455e5; /* Цвет кнопки */
+    color: white; /* Цвет текста */
+    padding: 20px 80px; /* Отступы внутри кнопки */
+    border-radius: 20px; /* Закругленные края */
+    font-size: 18px; /* Размер текста */
+    position: relative; /* Позиционирование относительно родительского элемента */
+    text-decoration: none; /* Убираем подчеркивание для ссылки */
+    transition: transform 0.3s ease; /* Плавное изменение размера */
+    z-index: 9999; /* Установите любое значение, чтобы кнопка была поверх всего остального */
+    /* Другие стили кнопки */
+}
+
+.custom-button:hover {
+    transform: scale(1.1); /* Увеличиваем размер при наведении */
+}
+
+.button-text {
+    position: relative; /* Позиционирование относительно родительского элемента */
+    left: -32px; /* Смещение текста вправо */
+}
+
+.divider {
+    position: absolute; /* Абсолютное позиционирование */
+    right: 20%; /* Расположение линии в середине кнопки */
+    top: 0; /* Расположение линии в самом верху кнопки */
+    width: 1px; /* Ширина линии */
+    height: 100%; /* Высота линии (равная высоте кнопки) */
+    background-color: white; /* Белый цвет линии */
+    transform: translateX(50%); /* Смещение линии вправо на половину её ширины */
+}
+
+.arrow {
+    position: absolute; /* Абсолютное позиционирование */
+    right: 29px; /* Расположение стрелочки справа */
+    top: 50%; /* Расположение стрелочки по вертикали посередине кнопки */
+    transform: translateY(-50%) rotate(45deg); /* Смещение стрелочки на половину её высоты вверх и поворот на 45 градусов против часовой стрелки */
+    border: solid white; /* Белая рамка */
+    border-width: 2px 2px 0 0; /* Треугольник, смотрящий направо */
+    padding: 5px; /* Отступы внутри стрелочки */
+    cursor: pointer; /* Курсор при наведении */
+    transition: all 0.3s ease; /* Плавное изменение свойств */
+}
+
+/* Картинка */
+
+.container {
     position: fixed;
-    bottom: 0;
-    right: 0;
-    margin: 0px; /* Отступ от края окна браузера */
+    bottom: 0px; /* отступ от нижнего края */
+    right: 0px; /* отступ от правого края */
+    z-index: 1; /* Установите значение меньше, чем у кнопки, чтобы картинка на фоне оказалась позади */
+    /* Другие стили для контейнера с картинкой */
+}
+
+.container img {
+    width: 2000px; /* ширина картинки, укажите подходящее значение */
+    height: auto; /* автоматически подстраивает высоту под ширину */
+}
+
+/* Медиа-запросы */
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+    .logo {
+        margin-bottom: 10px;
+    }
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .custom-button {
+        padding: 15px 30px;
+    }
+    header h1 {
+        font-size: 36px;
+    }
+    header p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-menu {
+        gap: 10px;
+    }
+    .custom-button {
+        padding: 10px 20px;
+    }
+    header h1 {
+        font-size: 24px;
+    }
+    header p {
+        font-size: 14px;
+    }
+}
+/*protection*/
+img {
+    pointer-events: none;
 }
