@@ -104,6 +104,7 @@ header p {
     max-width: 700px; /* Максимальная ширина текста */
     margin: 0 auto 40px; /* Центрируем текст и отступ снизу */
     text-align: left;
+    margin-left: 39px;
 }
 
 /* Кнопка */
