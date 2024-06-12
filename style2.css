@@ -121,8 +121,8 @@ header h1 {
     max-width: 1200px;
     font-size: 28px; /* Размер шрифта для заголовка */
     color: white; /* Цвет текста заголовка */
-    margin-left: 1090px; 
-    margin-top: 179px;
+    margin-left: -10px; 
+    margin-top: 219px;
     line-height: 1.5;
 }
 
